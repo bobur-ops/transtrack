@@ -31,5 +31,6 @@ export const useCarStore = create<ICarStore>(set => ({
     set(state => ({
       cars: carsData.vehicles.filter(car => car.category === val),
     })),
+
   resetFilter: () => set(state => ({ cars: carsData.vehicles })),
 }))

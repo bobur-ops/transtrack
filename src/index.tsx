@@ -21,6 +21,7 @@ const App = () => {
   const [language, setLanguage] = useState('en')
 
   const changeLanguage = (val: string) => {
+    // Нужно чтобы компоненты перерендерились и изменение языка работало
     setLanguage(val)
     i18n.locale = val
     switchLang()
