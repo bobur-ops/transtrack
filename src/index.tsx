@@ -11,7 +11,13 @@ const App = () => {
   const [initialRouteName, setInitialRouteName] = React.useState(ROUTES.MAIN)
 
   return (
-    <Drawer.Navigator initialRouteName={initialRouteName}>
+    <Drawer.Navigator
+      initialRouteName={initialRouteName}
+      screenOptions={{
+        headerShown: false,
+        drawerType: 'back',
+      }}
+    >
       <Drawer.Screen name={ROUTES.MAIN} component={MainScreen} />
       <Drawer.Screen
         name={ROUTES.TRANSPORTSCREEN}

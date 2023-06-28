@@ -1,0 +1,104 @@
+{
+  "vehicles": [
+    {
+      "id": 1,
+      "driverName": "Иванов",
+      "category": "Cargo",
+      "location": {
+        "latitude": 55.7558,
+        "longitude": 37.6176
+      },
+      "contactNumber": "+1234567890"
+    },
+    {
+      "id": 2,
+      "driverName": "Петров",
+      "category": "Passenger",
+      "location": {
+        "latitude": 55.7517,
+        "longitude": 37.6176
+      },
+      "contactNumber": "+9876543210"
+    },
+    {
+      "id": 3,
+      "driverName": "Сидоров",
+      "category": "Special",
+      "location": {
+        "latitude": 55.7539,
+        "longitude": 37.6208
+      },
+      "contactNumber": "+5555555555"
+    },
+    {
+      "id": 4,
+      "driverName": "Ильин",
+      "category": "Passenger",
+      "location": {
+        "latitude": 55.7572,
+        "longitude": 37.6155
+      },
+      "contactNumber": "+1111111111"
+    },
+    {
+      "id": 5,
+      "driverName": "Смирнова",
+      "category": "Cargo",
+      "location": {
+        "latitude": 55.7525,
+        "longitude": 37.6171
+      },
+      "contactNumber": "+2222222222"
+    },
+    {
+      "id": 6,
+      "driverName": "Козлов",
+      "category": "Special",
+      "location": {
+        "latitude": 55.7509,
+        "longitude": 37.6166
+      },
+      "contactNumber": "+3333333333"
+    },
+    {
+      "id": 7,
+      "driverName": "Новикова",
+      "category": "Cargo",
+      "location": {
+        "latitude": 55.7532,
+        "longitude": 37.6189
+      },
+      "contactNumber": "+4444444444"
+    },
+    {
+      "id": 8,
+      "driverName": "Морозов",
+      "category": "Passenger",
+      "location": {
+        "latitude": 55.7511,
+        "longitude": 37.6216
+      },
+      "contactNumber": "+5555555555"
+    },
+    {
+      "id": 9,
+      "driverName": "Волкова",
+      "category": "Special",
+      "location": {
+        "latitude": 55.7565,
+        "longitude": 37.6198
+      },
+      "contactNumber": "+6666666666"
+    },
+    {
+      "id": 10,
+      "driverName": "Зайцев",
+      "category": "Cargo",
+      "location": {
+        "latitude": 55.7548,
+        "longitude": 37.6224
+      },
+      "contactNumber": "+7777777777"
+    }
+  ]
+}

@@ -11,13 +11,20 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "transtrack.bobur",
+      "config": {
+        "googleMapsApiKey": "AIzaSyB8luS4Lv3tAJ_9mZPeCn704g7Y-xgYqJs"
+      }
     },
     "android": {
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyB8luS4Lv3tAJ_9mZPeCn704g7Y-xgYqJs"
+        }
+      },
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
