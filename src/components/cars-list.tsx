@@ -25,7 +25,7 @@ const CarsList = () => {
   }
 
   return (
-    <Box pt={24} pl={6}>
+    <Box pt={24} px={6}>
       <HStack mb={4} space={2}>
         <Button
           borderColor={'blue.900'}

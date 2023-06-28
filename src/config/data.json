@@ -2,103 +2,203 @@
   "vehicles": [
     {
       "id": 1,
-      "driverName": "Иванов",
+      "driverName": "Иван",
       "category": "Cargo",
       "location": {
         "latitude": 55.7558,
         "longitude": 37.6176
       },
-      "contactNumber": "+1234567890"
+      "contactNumber": "+79101234567"
     },
     {
       "id": 2,
-      "driverName": "Петров",
+      "driverName": "Алексей",
       "category": "Passenger",
       "location": {
-        "latitude": 55.7517,
-        "longitude": 37.6176
+        "latitude": 55.7522,
+        "longitude": 37.6156
       },
-      "contactNumber": "+9876543210"
+      "contactNumber": "+79109876543"
     },
     {
       "id": 3,
-      "driverName": "Сидоров",
+      "driverName": "Максим",
       "category": "Special",
       "location": {
         "latitude": 55.7539,
         "longitude": 37.6208
       },
-      "contactNumber": "+5555555555"
+      "contactNumber": "+79129876543"
     },
     {
       "id": 4,
-      "driverName": "Ильин",
-      "category": "Passenger",
+      "driverName": "Дмитрий",
+      "category": "Cargo",
       "location": {
-        "latitude": 55.7572,
-        "longitude": 37.6155
+        "latitude": 55.7517,
+        "longitude": 37.6179
       },
-      "contactNumber": "+1111111111"
+      "contactNumber": "+79135555555"
     },
     {
       "id": 5,
-      "driverName": "Смирнова",
-      "category": "Cargo",
+      "driverName": "Анна",
+      "category": "Passenger",
       "location": {
-        "latitude": 55.7525,
-        "longitude": 37.6171
+        "latitude": 55.7534,
+        "longitude": 37.6187
       },
-      "contactNumber": "+2222222222"
+      "contactNumber": "+79146666666"
     },
     {
       "id": 6,
-      "driverName": "Козлов",
+      "driverName": "Олег",
       "category": "Special",
       "location": {
-        "latitude": 55.7509,
-        "longitude": 37.6166
+        "latitude": 55.7519,
+        "longitude": 37.6203
       },
-      "contactNumber": "+3333333333"
+      "contactNumber": "+79157777777"
     },
     {
       "id": 7,
-      "driverName": "Новикова",
+      "driverName": "Елена",
       "category": "Cargo",
       "location": {
-        "latitude": 55.7532,
-        "longitude": 37.6189
+        "latitude": 55.7525,
+        "longitude": 37.6151
       },
-      "contactNumber": "+4444444444"
+      "contactNumber": "+79168888888"
     },
     {
       "id": 8,
-      "driverName": "Морозов",
+      "driverName": "Светлана",
       "category": "Passenger",
       "location": {
-        "latitude": 55.7511,
-        "longitude": 37.6216
+        "latitude": 55.7542,
+        "longitude": 37.6172
       },
-      "contactNumber": "+5555555555"
+      "contactNumber": "+79179999999"
     },
     {
       "id": 9,
-      "driverName": "Волкова",
+      "driverName": "Артем",
       "category": "Special",
       "location": {
-        "latitude": 55.7565,
-        "longitude": 37.6198
+        "latitude": 55.7508,
+        "longitude": 37.6192
       },
-      "contactNumber": "+6666666666"
+      "contactNumber": "+79181111111"
     },
     {
       "id": 10,
-      "driverName": "Зайцев",
+      "driverName": "Мария",
       "category": "Cargo",
       "location": {
-        "latitude": 55.7548,
-        "longitude": 37.6224
+        "latitude": 55.7531,
+        "longitude": 37.6163
       },
-      "contactNumber": "+7777777777"
+      "contactNumber": "+79192222222"
+    },
+    {
+      "id": 11,
+      "driverName": "Александра",
+      "category": "Passenger",
+      "location": {
+        "latitude": 55.755,
+        "longitude": 37.6199
+      },
+      "contactNumber": "+79333333333"
+    },
+    {
+      "id": 12,
+      "driverName": "Николай",
+      "category": "Special",
+      "location": {
+        "latitude": 55.7526,
+        "longitude": 37.6217
+      },
+      "contactNumber": "+79444444444"
+    },
+    {
+      "id": 13,
+      "driverName": "Евгений",
+      "category": "Cargo",
+      "location": {
+        "latitude": 55.7549,
+        "longitude": 37.614
+      },
+      "contactNumber": "+79555555555"
+    },
+    {
+      "id": 14,
+      "driverName": "Ирина",
+      "category": "Passenger",
+      "location": {
+        "latitude": 55.7513,
+        "longitude": 37.6165
+      },
+      "contactNumber": "+79666666666"
+    },
+    {
+      "id": 15,
+      "driverName": "Андрей",
+      "category": "Special",
+      "location": {
+        "latitude": 55.7521,
+        "longitude": 37.6193
+      },
+      "contactNumber": "+79777777777"
+    },
+    {
+      "id": 16,
+      "driverName": "Татьяна",
+      "category": "Cargo",
+      "location": {
+        "latitude": 55.7545,
+        "longitude": 37.6159
+      },
+      "contactNumber": "+79888888888"
+    },
+    {
+      "id": 17,
+      "driverName": "Антон",
+      "category": "Passenger",
+      "location": {
+        "latitude": 55.7518,
+        "longitude": 37.6177
+      },
+      "contactNumber": "+79999999999"
+    },
+    {
+      "id": 18,
+      "driverName": "Екатерина",
+      "category": "Special",
+      "location": {
+        "latitude": 55.7535,
+        "longitude": 37.6144
+      },
+      "contactNumber": "+79001111111"
+    },
+    {
+      "id": 19,
+      "driverName": "Павел",
+      "category": "Cargo",
+      "location": {
+        "latitude": 55.751,
+        "longitude": 37.6195
+      },
+      "contactNumber": "+79002222222"
+    },
+    {
+      "id": 20,
+      "driverName": "Людмила",
+      "category": "Passenger",
+      "location": {
+        "latitude": 55.7553,
+        "longitude": 37.6158
+      },
+      "contactNumber": "+79003333333"
     }
   ]
 }
