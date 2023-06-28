@@ -4,9 +4,13 @@ import { useCarStore } from '../store/carStore'
 import { MapBlock } from '../components'
 import { MaterialCommunityIcons, Ionicons, Entypo } from '@expo/vector-icons'
 import { Linking } from 'react-native'
-import { Alert } from 'react-native'
+import { i18n } from '../utils/i18n'
 
-const TransportScreen = () => {
+interface IProps {
+  language: string
+}
+
+const TransportScreen: React.FC<IProps> = ({ language }) => {
   const { car } = useCarStore(state => ({ car: state.selectedCar }))
 
   const initialRegion = {
@@ -33,6 +37,9 @@ const TransportScreen = () => {
 
   return (
     <VStack backgroundColor={'blueGray.50'} flex={1}>
+      <Text position={'absolute'} opacity={0}>
+        {language}
+      </Text>
       <MapBlock
         width={100}
         height={40}
@@ -62,14 +69,14 @@ const TransportScreen = () => {
             background={'green.800'}
             onPress={() => openPhoneApp(car.contactNumber)}
           >
-            <Text color="white">Call</Text>
+            <Text color="white">{i18n.t('call')}</Text>
           </Button>
           <Button
             width={100}
             background={'blue.800'}
             onPress={() => openWhatsAppChat(car.contactNumber)}
           >
-            <Text color="white">Message</Text>
+            <Text color="white">{i18n.t('message')}</Text>
           </Button>
         </HStack>
       </VStack>

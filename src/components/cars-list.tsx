@@ -1,7 +1,10 @@
 import { useState } from 'react'
-import { Box, Button, HStack, Text } from 'native-base'
-import { useCarStore } from '../store/carStore'
+import { Box, Button, HStack, ScrollView, Text, Pressable } from 'native-base'
+import { CarType, useCarStore } from '../store/carStore'
 import CarListItem from './car-list-item'
+import { useNavigation } from '@react-navigation/native'
+import { ROUTES } from '../config/routes'
+import { i18n } from '../utils/i18n'
 
 const CarsList = () => {
   const { cars, filterCarsStore, resetFilter, setSelecetedCar } = useCarStore(
@@ -13,6 +16,7 @@ const CarsList = () => {
     })
   )
   const [filterValue, setFilterValue] = useState<String>('')
+  const navigation = useNavigation()
 
   const handleChangeFilterValue = (value: string) => {
     if (filterValue === value) {
@@ -24,8 +28,13 @@ const CarsList = () => {
     }
   }
 
+  const onHandlePress = (car: CarType) => {
+    setSelecetedCar(car)
+    navigation.navigate(ROUTES.TRANSPORTSCREEN.name)
+  }
+
   return (
-    <Box pt={24} px={6}>
+    <Box pt={32} px={6}>
       <HStack mb={4} space={2}>
         <Button
           borderColor={'blue.900'}
@@ -33,10 +42,12 @@ const CarsList = () => {
           backgroundColor={filterValue === 'Cargo' ? 'blue.900' : 'white'}
           borderWidth={2}
           py={1}
-          px={4}
+          px={2}
           borderRadius={6}
         >
-          <Text color={filterValue === 'Cargo' ? 'white' : 'black'}>Cargo</Text>
+          <Text color={filterValue === 'Cargo' ? 'white' : 'black'}>
+            {i18n.t('Cargo')}
+          </Text>
         </Button>
         <Button
           borderColor={'blue.900'}
@@ -44,11 +55,11 @@ const CarsList = () => {
           backgroundColor={filterValue === 'Passenger' ? 'blue.900' : 'white'}
           borderWidth={2}
           py={1}
-          px={4}
+          px={2}
           borderRadius={6}
         >
           <Text color={filterValue === 'Passenger' ? 'white' : 'black'}>
-            Passenger
+            {i18n.t('Passenger')}
           </Text>
         </Button>
         <Button
@@ -57,17 +68,21 @@ const CarsList = () => {
           backgroundColor={filterValue === 'Special' ? 'blue.900' : 'white'}
           borderWidth={2}
           py={1}
-          px={4}
+          px={2}
           borderRadius={6}
         >
           <Text color={filterValue === 'Special' ? 'white' : 'black'}>
-            Special
+            {i18n.t('Special')}
           </Text>
         </Button>
       </HStack>
-      {cars.map(car => (
-        <CarListItem key={car.id} car={car} setSelecetedCar={setSelecetedCar} />
-      ))}
+      <ScrollView>
+        {cars.map(car => (
+          <Pressable onPress={() => onHandlePress(car)} key={car.id}>
+            <CarListItem car={car} setSelecetedCar={setSelecetedCar} />
+          </Pressable>
+        ))}
+      </ScrollView>
     </Box>
   )
 }

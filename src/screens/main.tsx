@@ -4,12 +4,19 @@ import { Feather } from '@expo/vector-icons'
 import { CarsList, MapBlock } from '../components'
 import { useCarStore } from '../store/carStore'
 
-const MainScreen = () => {
+interface IProps {
+  language: string
+}
+
+const MainScreen: React.FC<IProps> = ({ language }) => {
   const [isMapShown, setIsMapShown] = React.useState(false)
   const { cars } = useCarStore(state => ({ cars: state.cars }))
 
   return (
     <VStack backgroundColor={'blueGray.50'} flex={1}>
+      <Text position={'absolute'} opacity={0}>
+        {language}
+      </Text>
       {isMapShown ? <MapBlock width={100} height={100} cars={cars} /> : null}
       <CarsList />
 

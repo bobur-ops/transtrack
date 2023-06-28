@@ -1,0 +1,10 @@
+{
+  "Cargo": "Cargo",
+  "Passenger": "Passenger",
+  "Special": "Special",
+  "main": "Main",
+  "transport_screen": "Transport Screen",
+  "settings_screen": "Settings Screen",
+  "call": "Call",
+  "message": "Message"
+}
